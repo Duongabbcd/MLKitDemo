@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MLKitFaceDetection</string>
+    <string name="profile_item_email_header">Email</string>
+    <string name="profile_item_phone_header">Cellphone Number</string>
+    <string name="profile_item_password_header">Change Password</string>
+    <string name="profile_item_email_details">vntalking@gmail.com</string>
+    <string name="profile_item_phone_details">+84 113</string>
+    <string name="profile_item_password_details">Tap to change password</string>
+    <string name="title_activity_text_recognition">TextRecognitionActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

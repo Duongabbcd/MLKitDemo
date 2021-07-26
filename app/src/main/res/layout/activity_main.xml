@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <com.wonderkiln.camerakit.CameraView
+      android:id="@+id/camera_view"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_above="@+id/linearLayout">
+
+  </com.wonderkiln.camerakit.CameraView>
+
+  <com.example.mldemo.Helper.GraphicOverlay
+      android:id="@+id/graphic_overlay"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_above="@id/linearLayout"
+      />
+
+<!--  <TextView-->
+<!--      android:id="@+id/textView"-->
+<!--      android:text="Display discription here"-->
+<!--      android:textSize="20dp"-->
+<!--      android:textStyle="bold"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--    android:layout_above="@+id/linearLayout"-->
+<!--      />-->
+  <LinearLayout
+     android:id="@+id/linearLayout"
+      android:layout_alignParentBottom="true"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/detect_face_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:text="Detect Face"
+        android:textColor="@color/black"
+        android:layout_weight="0.5"
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/detect_text_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/purple_200"-->
+<!--        android:text="Detect Text"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_weight="0.5"-->
+<!--        />-->
+  </LinearLayout>
+
+</RelativeLayout>
