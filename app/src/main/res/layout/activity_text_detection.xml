@@ -6,45 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".TextDetectionActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="400dp"/>
-    <TextView
-        android:id="@+id/text_display"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:text="Display discription here"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:padding="5dp"
-        android:maxLines="5"
-        android:layout_marginTop="5dp"
-        />
+        android:layout_height="wrap_content" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/detect_text_image_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:backgroundTint="#807C7C"
-        android:text="Detect Text"
-        android:textAllCaps="false"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#fff"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="3dp">
 
-        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
 
-    <Button
-        android:id="@+id/capture_image_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#EF5656"
-        android:text="Capture Image"
-        android:layout_above="@+id/detect_text_image_btn"
-        android:textAllCaps="false"
-        android:layout_marginBottom="10dp"
-        />
+                        <TextView
+                            android:textSize="20dp"
+                            android:text="Result"
+                            android:textStyle="bold"
+                            android:textColor="#1387ED"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
 
+                        <EditText
+                            android:id="@+id/resultEt"
+                            android:hint=""
+                            android:autoLink="all"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            android:background="#FFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#fff"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:textSize="20dp"
+                            android:text="Image Review"
+                            android:textStyle="bold"
+                            android:textColor="#1387ED"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxHeight="250dp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    </ScrollView>
 
 
 </RelativeLayout>
